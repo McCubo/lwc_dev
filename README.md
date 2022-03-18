@@ -1,5 +1,5 @@
 # Salesforce Development
-Useful things and tests related to Apex, LWC, Aura.
+Useful things and tests related to Apex, LWC, Aura development.
 
 You have the freedom to copy and redistribute it, with or without modifications, either commercially or non-commercially.
 ## Authors
