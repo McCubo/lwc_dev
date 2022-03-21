@@ -10,6 +10,7 @@
         <apex:slds />
     </head>
     <apex:remoteObjects>
+        <!-- Fields to be included in the SOQL query -->
         <apex:remoteObjectModel name="Contact" fields="Id,Name,Title,LastModifiedDate,PhotoUrl" />
     </apex:remoteObjects>
 
@@ -102,9 +103,7 @@
                     '<li class="slds-item">',
                     '<div class="slds-tile slds-media">',
                         '<div class="slds-media__figure">',
-                        '<svg aria-hidden="true" class="slds-icon slds-icon-standard-user">',
-                            '<use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#user')}"></use>',
-                        '</svg>',
+                        '<img class="slds-avatar slds-avatar_medium" src="', record.get('PhotoUrl'), '" alt="" />',
                         '</div>',
                         '<div class="slds-media__body">',
                         '<h3 class="slds-truncate" title="', record.get('Name'), '"><a href="javascript:void(0);">', record.get('Name') ,'</a></h3>',
