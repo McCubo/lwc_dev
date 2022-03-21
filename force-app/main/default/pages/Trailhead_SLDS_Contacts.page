@@ -89,7 +89,15 @@
             </div>
             <!-- / PRIMARY CONTENT WRAPPER -->
             <!-- FOOTER -->
-            <!-- / FOOTER -->
+            <footer role="contentinfo"  class="slds-p-around_large">
+                <!-- LAYOUT GRID -->
+                <div class="slds-grid slds-grid_align-spread">
+                <p class="slds-col">Salesforce Lightning Design System Example</p>
+                <p class="slds-col">&copy; McCubo</p>
+                </div>
+                <!-- / LAYOUT GRID -->
+            </footer>
+            <!-- / FOOTER -->  
         </div>
         <!-- / REQUIRED SLDS WRAPPER -->
         <!-- JAVASCRIPT -->
