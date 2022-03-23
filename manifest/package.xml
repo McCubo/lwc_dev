@@ -19,6 +19,10 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>ProjectService</members>
+		<name>ConnectedApp</name>
+	</types>
+	<types>
 		<members>Account.Active__c</members>
 		<members>Account.CustomerPriority__c</members>
 		<members>Account.NumberofLocations__c</members>
@@ -58,6 +62,14 @@
 		<members>ServiceCredentials__c</members>
 		<members>ServiceTokens__c</members>
 		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>ProjectService</members>
+		<name>NamedCredential</name>
+	</types>
+	<types>
+		<members>BillingService</members>
+		<name>RemoteSiteSetting</name>
 	</types>
 	<types>
 		<members>Project__c.Start_Must_Be_Before_End</members>
