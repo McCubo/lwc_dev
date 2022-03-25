@@ -55,6 +55,6 @@ private class BillingCalloutServiceTest {
       update project;
       Test.stopTest();
       Project__c updatedProject = [SELECT Id, Status__c FROM Project__c WHERE Id = :project.Id];
-      System.assertEquals('Billable', updatedProject.Status__c, 'Project callout failed');
+      System.assertEquals('Billable', updatedProject.Status__c, 'Project was updated even when callout failed');
     }    
 }
