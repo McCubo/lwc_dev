@@ -6,6 +6,7 @@ You have the freedom to copy and redistribute it, with or without modifications,
 ## Trailhead Projects
 - [Build a Visualforce App with the Lightning Design System](https://github.com/McCubo/lwc_dev/tree/visualforce-slds)
 - [Data Integration Specialist](https://github.com/McCubo/lwc_dev/tree/superbadge/data-integration-specialist)
+- [Advanced Apex Specialist](https://github.com/McCubo/lwc_dev/tree/superbadge/advanced_apex_specialist)
 ## Authors
 
 - [@mccubo](https://www.github.com/mccubo)
