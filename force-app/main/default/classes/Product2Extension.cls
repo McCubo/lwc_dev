@@ -61,7 +61,7 @@ public class Product2Extension {
         return options;
     }
 
-    class ProductWrapper {
+    public class ProductWrapper {
 
         public Product2 productRecord = new Product2();
         public PricebookEntry pricebookEntryRecord = new PricebookEntry();

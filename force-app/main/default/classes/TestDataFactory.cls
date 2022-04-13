@@ -56,6 +56,7 @@ public with sharing class TestDataFactory {
         }
         return options;
     }
+    
     /**
      * @name CreatePricebookEntries
      * @description Constructs a list of PricebookEntry records for unit tests
@@ -185,7 +186,7 @@ public with sharing class TestDataFactory {
     }
 
     public static void VerifyQuantityOrdered(Product2 originalProduct, Product2 updatedProduct, Integer qtyOrdered) {
-
+        System.assertEquals(qtyOrdered + originalProduct.Quantity_Ordered__c, updatedProduct.Quantity_Ordered__c, 'Field not updated correctly!');
     }
 
 }
