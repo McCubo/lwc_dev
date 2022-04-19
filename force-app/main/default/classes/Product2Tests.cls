@@ -33,4 +33,22 @@ private class Product2Tests {
         Test.stopTest();
     }
 
+    @IsTest
+    static void Product2Trigger_UnitTest() {
+        CollaborationGroup cg = TestDataFactory.ConstructCollaborationGroup();        
+        insert cg;
+        Product2 prod = new Product2(
+            Name = 'Test-Prod',
+            Initial_Inventory__c = 100,
+            Quantity_Ordered__c = 1,
+            Family = 'Side',
+            IsActive = true
+        );
+        insert prod;
+        Test.startTest();
+        prod.Quantity_Ordered__c = 99;
+        update prod;
+        ChartHelper.GetInventory();
+        Test.stopTest();        
+    }
 }

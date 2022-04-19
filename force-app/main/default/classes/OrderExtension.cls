@@ -140,6 +140,7 @@ ApexPages.StandardSetController standardSetController;
         } catch (Exception e) {
             Database.rollback(sp);
             apexPages.addMessage(new ApexPages.message(ApexPages.Severity.INFO,Constants.ERROR_MESSAGE));
+            throw e;
         }
     }
 

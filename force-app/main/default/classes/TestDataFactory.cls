@@ -39,6 +39,7 @@ public with sharing class TestDataFactory {
                 Initial_Inventory__c = 10,
                 Family = productFamilies.get(z)
             );
+            System.debug('TEST:productFamilies.get(z): ' + productFamilies.get(z));
             if ((productFamilies.size() -1) == z) {
                 z = 0;
             } else {
